@@ -36,6 +36,7 @@ class DataClient
 
   end
 
+
   #select a client
   def self.selectClient(clientId)
 
@@ -54,7 +55,7 @@ class DataClient
 
       doc = { :client_id => 9, :is_connected => true,
               :creation_date =>  DateTime.now,
-              :update_date =>  DateTime.now, :readings: []}
+              :update_date =>  DateTime.now, :readings => []}
 
       docs = client[:clients].find({}, { :projection => {:client_id => 0}})
 
@@ -76,7 +77,7 @@ class DataClient
 
 
   #update a client
-  def self.updateClient(client)
+  def self.updateClient()
 
     Mongo::Logger.logger.level = ::Logger::DEBUG
 
@@ -85,15 +86,15 @@ class DataClient
       connection = Mongo::Client.new([ '127.0.0.1:27017' ], :database => @db,
                                      :server_selection_timeout => 5)
 
+      p 'connection open'
 
-
-      document = { :client_id => 9, :is_connected => true,
+      document = { :client_id => 13, :is_connected => true,
                    :creation_date =>  DateTime.now,
-                   :update_date =>  DateTime.now, :readings => [] }
+                   :update_date =>  DateTime.now }
 
-      connection[:client_readings].insert_one document
+      connection[:clients].insert_one document
       connection.close
-
+      p 'connection close'
     rescue Mongo::Error::NoServerAvailable => e
 
       puts 'Cannot connect to the server'
@@ -134,3 +135,4 @@ end
 
 end
 
+DataClient.updateClient()

@@ -52,7 +52,7 @@ class DataReading
 
       connection[:client_readings].find(:client_id => clientId ).each do |doc|
         (doc[:readings]).each do |item|
-          readings. item[:value]
+          puts readings. item[:value]
         end
       end
 
@@ -76,4 +76,3 @@ end
 
 
 a = DataReading.selectAllClientReadings(1)
-puts a
