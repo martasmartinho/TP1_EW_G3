@@ -21,7 +21,7 @@ class DataEngine
     return @dataClient
   end
 
-  def getDataReading()
+  def getDataReading
 
     if (@dataClient == nill)
       @dataClient = new.DataClient(this)
