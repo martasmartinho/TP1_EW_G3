@@ -1,2 +1,2 @@
-class ClientC
+class ClientC < XDK
 end

@@ -7,9 +7,8 @@ class DataClient
   attr_accessor :db
   @db = 'tp1_ew_mongodb'
 
-
   #create new client
-  def self.insertClient(client)
+  def self.insertClient(client_id, is_connected)
 
       Mongo::Logger.logger.level = ::Logger::FATAL
 
@@ -18,9 +17,7 @@ class DataClient
         connection = Mongo::Client.new([ '127.0.0.1:27017' ], :database => @db,
                                     :server_selection_timeout => 5)
 
-
-
-        document = { :client_id => client::clientId, :is_connected => true,
+        document = { :client_id => cliente_id,
                 :creation_date =>  DateTime.now,
                 :update_date =>  DateTime.now, :readings => [] }
 
@@ -77,7 +74,7 @@ class DataClient
 
 
   #update a client
-  def self.updateClient()
+  def self.updateClient(client_id, is_connected)
 
     Mongo::Logger.logger.level = ::Logger::DEBUG
 
@@ -88,11 +85,11 @@ class DataClient
 
       p 'connection open'
 
-      document = { :client_id => 13, :is_connected => true,
-                   :creation_date =>  DateTime.now,
-                   :update_date =>  DateTime.now }
+      connection[:client_readings].update_one({:client_id => client_id}, '$push' =>
+          {:is_connected => is_connected,
+           :value => readings::value,
+           :update_date =>  DateTime.now} )
 
-      connection[:clients].insert_one document
       connection.close
       p 'connection close'
     rescue Mongo::Error::NoServerAvailable => e
@@ -104,35 +101,4 @@ class DataClient
 
   end
 
-  #remove a client
-  def self.deleteClient
-
-    Mongo::Logger.logger.level = ::Logger::DEBUG
-
-    begin
-
-      connection = Mongo::Client.new([ '127.0.0.1:27017' ], :database => @db,
-                                     :server_selection_timeout => 5)
-
-
-
-      document = { :client_id => 9, :is_connected => true,
-                   :creation_date =>  DateTime.now,
-                   :update_date =>  DateTime.now, :readings => [] }
-
-      connection[:client_readings].insert_one document
-      connection.close
-
-    rescue Mongo::Error::NoServerAvailable => e
-
-      puts 'Cannot connect to the server'
-      puts e
-
-    end
-
-
 end
-
-end
-
-DataClient.updateClient()
