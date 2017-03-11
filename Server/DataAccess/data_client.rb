@@ -10,55 +10,91 @@ class DataClient
   #create new client
   def self.insertClient(client_id, is_connected)
 
-      Mongo::Logger.logger.level = ::Logger::FATAL
+    Mongo::Logger.logger.level = ::Logger::FATAL
 
-      begin
+    begin
 
-        connection = Mongo::Client.new([ '127.0.0.1:27017' ], :database => @db,
-                                    :server_selection_timeout => 5)
+      #open connection
+      connection = Mongo::Client.new(['127.0.0.1:27017'], :database => @db,
+                                     :server_selection_timeout => 5)
 
-        document = { :client_id => cliente_id,
-                :creation_date =>  DateTime.now,
-                :update_date =>  DateTime.now, :readings => [] }
+      #create new document
+      document = {:client_id => client_id,
+                  :is_connected => is_connected,
+                  :creation_date => DateTime.now,
+                  :update_date => DateTime.now, :readings => []}
 
-        connection[:client_readings].insert_one document
-        connection.close
+      #insert document
+      connection[:client_readings].insert_one document
 
-        rescue Mongo::Error::NoServerAvailable => e
+      #close connection
+      connection.close
 
-        puts 'Cannot connect to the server'
-        puts e
+    rescue Mongo::Error::NoServerAvailable => e
 
-      end
+      puts 'Cannot connect to the server'
+      puts e
+
+    end
 
   end
 
 
   #select a client
-  def self.selectClient(clientId)
+  def self.existClient(client_id)
+
+    exist = false
 
     Mongo::Logger.logger.level = ::Logger::FATAL
 
     begin
 
-      client = Mongo::Client.new([ '127.0.0.1:27017' ], :database => 'tp1_ew_mongodb',
+      #open connection
+      client = Mongo::Client.new(['127.0.0.1:27017'], :database => @db,
                                  :server_selection_timeout => 5)
 
+      #count documents
+      docs = client[:client_readings].find(:client_id => client_id)
 
-      client[:client_readings].find.each { |doc| puts doc }
-
-
-
-
-      doc = { :client_id => 9, :is_connected => true,
-              :creation_date =>  DateTime.now,
-              :update_date =>  DateTime.now, :readings => []}
-
-      docs = client[:clients].find({}, { :projection => {:client_id => 0}})
-
-
-      #client[:clients].insert_one doc
+      #close connection
       client.close
+
+      if docs.count > 0
+
+        exist = true
+
+      end
+
+      return exist
+
+    rescue Mongo::Error::NoServerAvailable => e
+
+      p 'Cannot connect to the server'
+      p e
+
+    end
+
+  end
+
+
+  #select a client
+  def self.selectClient(client_id)
+
+    Mongo::Logger.logger.level = ::Logger::FATAL
+
+    begin
+
+      #open connection
+      client = Mongo::Client.new(['127.0.0.1:27017'], :database => @db,
+                                 :server_selection_timeout => 5)
+
+      #select document
+      doc = client[:client_readings].find(:client_id => client_id)
+
+      #close connection
+      client.close
+
+      return doc
 
     rescue Mongo::Error::NoServerAvailable => e
 
@@ -80,18 +116,19 @@ class DataClient
 
     begin
 
-      connection = Mongo::Client.new([ '127.0.0.1:27017' ], :database => @db,
+      #open connection
+      connection = Mongo::Client.new(['127.0.0.1:27017'], :database => @db,
                                      :server_selection_timeout => 5)
 
-      p 'connection open'
-
+      #update document
       connection[:client_readings].update_one({:client_id => client_id}, '$push' =>
           {:is_connected => is_connected,
            :value => readings::value,
-           :update_date =>  DateTime.now} )
+           :update_date => DateTime.now})
 
+      #close connection
       connection.close
-      p 'connection close'
+
     rescue Mongo::Error::NoServerAvailable => e
 
       puts 'Cannot connect to the server'
