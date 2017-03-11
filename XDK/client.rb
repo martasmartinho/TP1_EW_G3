@@ -2,7 +2,7 @@ require 'drb/drb'
 
 
 
-class Client
+class Client < XDK
 
   attr_accessor :remote_object
   @remote_object = DRbObject.new_with_uri('druby://localhost:9090')
