@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e30bd38a-ff88-4b8b-ad5e-6c4052ac5409" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/martamartinho.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/client_a.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/runConfigurations/server__1_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/XDK/client_b.rb" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/TCPServerConnection/dr_server.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Server/TCPServerConnection/readings_server.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/XDK/client.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/XDK/client_main_class.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/XDK/cliente_b.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/XDK/dr_client.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/XDK/readings_client.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TP1_EW_G3.iml" afterPath="$PROJECT_DIR$/.idea/TP1_EW_G3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/DataAccess/data_client.rb" afterPath="$PROJECT_DIR$/Server/DataAccess/data_client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/DataAccess/data_reading.rb" afterPath="$PROJECT_DIR$/Server/DataAccess/data_reading.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Logic/client.rb" afterPath="$PROJECT_DIR$/Server/Logic/client.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Logic/reading.rb" afterPath="$PROJECT_DIR$/Server/Logic/reading.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/client_a.rb" afterPath="$PROJECT_DIR$/XDK/client_a.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/client_c.rb" afterPath="$PROJECT_DIR$/XDK/client_c.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/xdk.rb" afterPath="$PROJECT_DIR$/XDK/xdk.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" afterPath="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TP1_EW_G3@client_main_class.coverage" NAME="client_main_class Coverage Results" MODIFIED="1489239670571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@main_class.coverage" NAME="main_class Coverage Results" MODIFIED="1489702744869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/UI" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@server.coverage" NAME="server Coverage Results" MODIFIED="1489797278695" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@server.coverage" NAME="server Coverage Results" MODIFIED="1489798878975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@readings_client.coverage" NAME="readings_client Coverage Results" MODIFIED="1489249824244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1489274713083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/Logic" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@dr_client.coverage" NAME="dr_client Coverage Results" MODIFIED="1489275633473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
@@ -51,7 +30,7 @@
     <SUITE FILE_PATH="coverage/TP1_EW_G3@data_reading.coverage" NAME="data_reading Coverage Results" MODIFIED="1489789005564" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/DataAccess" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@server__1_.coverage" NAME="server (1) Coverage Results" MODIFIED="1489509466360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@xdk_device.coverage" NAME="xdk_device Coverage Results" MODIFIED="1489331340576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDKC" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_a.coverage" NAME="client_a Coverage Results" MODIFIED="1489796943337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_a.coverage" NAME="client_a Coverage Results" MODIFIED="1489798892696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@All_tests_in_TP1_EW_G3__TP1_EW_G3.coverage" NAME="All tests in TP1_EW_G3: TP1_EW_G3 Coverage Results" MODIFIED="1489243800765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@tcp_server.coverage" NAME="tcp_server Coverage Results" MODIFIED="1489511989966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@client_connection.coverage" NAME="client_connection Coverage Results" MODIFIED="1489191118284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" MODULE_NAME="TP1_EW_G3" />
@@ -278,7 +257,7 @@
       <recent name="$PROJECT_DIR$/UI" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.server">
+  <component name="RunManager" selected="Ruby.client_a">
     <configuration default="false" name="client_b" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="TP1_EW_G3" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -619,7 +598,7 @@
       <workItem from="1489341585655" duration="1000" />
       <workItem from="1489481316649" duration="59681000" />
       <workItem from="1489678135418" duration="33562000" />
-      <workItem from="1489768713270" duration="13522000" />
+      <workItem from="1489768713270" duration="14937000" />
     </task>
     <servers />
   </component>
@@ -629,7 +608,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="201098000" />
+    <option name="totallyTimeSpent" value="202513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="800" extended-state="0" />
@@ -640,9 +619,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789317" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4397163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4397163" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12986112" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12986112" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17569445" sideWeight="0.3688029" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45815602" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -937,14 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XDK/client_a.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XDK/client_c.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-113">
@@ -953,15 +924,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/XDK/client_a.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server/TCPServerConnection/server.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1875">
-          <caret line="130" column="0" lean-forward="true" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="e#144#215#0" expanded="false" />
-            <element signature="e#4049#4180#0" expanded="false" />
-            <element signature="e#4212#5242#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="172">
+          <caret line="171" column="21" lean-forward="true" selection-start-line="171" selection-start-column="21" selection-end-line="171" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

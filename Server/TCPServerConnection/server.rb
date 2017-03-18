@@ -175,12 +175,12 @@ class Server
         cl = Client.new
         cl = c
 
-        puts '||                                              ||'
-        puts "|| client  #{cl.client_id}                      ||"
-        puts "||  *location: #{cl.location}                         ||"
-        puts "||  *Temperature: #{cl.temperature_counter}     ||"
-        puts "||  *Acoustic: #{cl.acoustic_counter}           ||"
-        puts '||_________________________________________||'
+        puts '||'
+        puts "|| client  #{cl.client_id}"
+        puts "||    *location: #{cl.location}"
+        puts "||    *Temperature: #{cl.temperature_counter}"
+        puts "||    *Acoustic: #{cl.acoustic_counter}"
+        puts '||___________________________________________'
 
       }
     else
