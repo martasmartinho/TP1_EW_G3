@@ -1,5 +1,6 @@
-require 'rubygems'
-require 'mongo'
+#require 'rubygems'
+#"{require 'mongo'
+#require 'bson'}"
 
 class DataClient
 
@@ -8,7 +9,7 @@ class DataClient
   @db = 'tp1_ew_mongodb'
 
   #create new client
-  def self.insertClient(client_id, is_connected)
+  def self.insertClient(client_id, is_connected, location)
 
     Mongo::Logger.logger.level = ::Logger::FATAL
 
@@ -19,8 +20,9 @@ class DataClient
                                      :server_selection_timeout => 5)
 
       #create new document
-      document = {:client_id => client_id,
+      document = {:client_id => Integer(client_id),
                   :is_connected => is_connected,
+                  :location => Integer(location),
                   :creation_date => DateTime.now,
                   :update_date => DateTime.now, :readings => []}
 
@@ -54,7 +56,7 @@ class DataClient
                                  :server_selection_timeout => 5)
 
       #count documents
-      docs = client[:client_readings].find(:client_id => client_id)
+      docs = client[:client_readings].find(:client_id => Integer(client_id))
 
       #close connection
       client.close
@@ -80,6 +82,8 @@ class DataClient
   #select a client
   def self.selectClient(client_id)
 
+    c = Client.new
+
     Mongo::Logger.logger.level = ::Logger::FATAL
 
     begin
@@ -89,12 +93,18 @@ class DataClient
                                  :server_selection_timeout => 5)
 
       #select document
-      doc = client[:client_readings].find(:client_id => client_id)
+      client[:client_readings].find(:client_id => Integer(client_id)).each do |doc|
+
+        c.client_id = Integer(doc['client_id'])
+        c.is_connected = doc['is_connected']
+        c.location = doc['location']
+
+      end
 
       #close connection
       client.close
 
-      return doc
+      return c
 
     rescue Mongo::Error::NoServerAvailable => e
 
@@ -110,7 +120,7 @@ class DataClient
 
 
   #update a client
-  def self.updateClient(client_id, is_connected)
+  def self.updateClient(client_id, is_connected, location)
 
     Mongo::Logger.logger.level = ::Logger::DEBUG
 
@@ -121,9 +131,9 @@ class DataClient
                                      :server_selection_timeout => 5)
 
       #update document
-      connection[:client_readings].update_one({:client_id => client_id}, '$push' =>
+      connection[:client_readings].update_one({:client_id => Integer(client_id)}, '$set' =>
           {:is_connected => is_connected,
-           :value => readings::value,
+           :location => Integer(location),
            :update_date => DateTime.now})
 
       #close connection

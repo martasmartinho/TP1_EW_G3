@@ -1,68 +1,57 @@
-load 'Server/DataAccess/data_client'
-load 'Server/Logic/reading'
+load '../DataAccess/data_client.rb'
+load '../DataAccess/data_reading.rb'
+
 
 class Client
 
   #fields
-  attr_accessor :client_id, :is_connected, :readings
+  attr_accessor :client_id, :is_connected, :location, :readings, :temperature_counter, :acoustic_counter
 
   #Constructor
-  def initialize(client_id = 0, is_connected = false)
+  def initialize(client_id = 0, is_connected = false, location = 000000)
 
     @client_id= client_id
     @is_connected = is_connected
+    @location = location
+    @temperature_counter = 0
+    @acoustic_counter = 0
 
   end
 
-
-  #connect new client
-  def connectNewClient()
+  def connectClient
 
     if DataClient.existClient(@client_id)
-
-      DataClient.insertClient(@client_id, @is_connected)
-      return true
-
+      DataClient.updateClient(@client_id, @is_connected, @location)
+    else
+      DataClient.insertClient(@client_id, @is_connected, @location)
     end
 
-    return false
 
   end
 
 
   #reconnect a client
-  def reconectClient()
+  def disconnectClient
 
-    DataClient.updateClient(@clientId, true)
-    @is_connected = true;
-
-  end
-
-
-  #disconect a client
-  def disconnectClient()
-
-    DataClient.updateClient(@clientId, false)
-    @is_connected = false;
+    DataClient.updateClient(@client_id, @is_connected, @location)
 
   end
-
 
   #get a client
   def getClient(client_id)
 
-    res = DataClient.selectClient(@client_id)
+    if existClient()
+      return DataClient.selectClient(client_id)
+    end
 
-    @client_id = client_id
-    @is_connected = res[:is_connected]
+    return nil
 
-    return client
 
   end
 
 
   #get a client
-  def existClient()
+  def existClient
 
     exist = DataClient.existClient(@client_id)
 
@@ -72,39 +61,67 @@ class Client
 
 
   #get a client readings
-  def getReadings()
+  def getReadings(sensor_type)
 
     @readings = Array.new
-    reading = Reading.new
 
-    readings = reading.DataReading.selectAllClientReadings(client_id)
+    @readings = DataReading.selectAllClientReadings(@client_id, sensor_type)
 
-    return @readings
+
 
   end
 
   #get add new reading
-  def addReading(sensor_type, value, location)
+  def addReading(sensor_type = nil, value = nil, location = nil, timestamp = nil)
 
-    if @readings == null
+    if @readings == nil
 
-      @readings = Array.new
+      @readings = Array::new
 
     end
 
-    reading = Reading.new
+    if @is_connected
+      reading = Reading::new
 
-    #serialise object
-    reading.client_id = @client_id
-    reading.sensor_type = sensor_type
-    reading.value = value
-    reading.location = location
-    readings.timestamp = DateTime.now
+      #serialise object
+      reading.client_id = @client_id
+      reading.sensor_type = sensor_type
+      reading.value = value
+      reading.location = location
+      reading.timestamp = timestamp
 
+      if sensor_type == 1
+        @temperature_counter = @temperature_counter + 1
+      else
+        @acoustic_counter = @acoustic_counter + 1
+      end
 
-    reading.insertReading()
+      @readings.push(reading)
 
-    @readings[readings.count()] = reading
+    end
+
+    if (((@temperature_counter + @acoustic_counter) == 10 || !@is_connected) && @readings.count > 0)
+      DataReading.insertReadings(@client_id, @readings)
+      readings.clear
+    end
+
+  end
+
+  def saveReadings
+
+    docs = '['
+    @readings.each do |r|
+      docs += format('{:sensor_type=> %d, :value=> %f, :location=> %d, :sensor_type=> %s},',
+                     r.sensor_type,
+                     r.value,
+                     r.location,
+                     r.timestamp.to_s)
+    end
+    n = docs.length - 2
+    docs = docs[0..n]
+    docs = ']'
+
+    DataReading.insertReadings(@client_id, docs)
 
   end
 

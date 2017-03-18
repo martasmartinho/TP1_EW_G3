@@ -1,2 +1,0 @@
-class ClienteB < XDK
-end
