@@ -1,7 +1,9 @@
 require 'socket'
 require 'json'
-load '../Logic/client.rb'
-load '../Logic/reading.rb'
+
+load '../Server/Logic/client.rb'
+load '../Server/Logic/reading.rb'
+
 
 class Server
 
@@ -19,7 +21,7 @@ class Server
 
     @server_socket = TCPServer.open(@port)
     puts 'socket created'
-    printReadings
+    #printReadings
 
     while true
       puts 'waiting o client connection'
@@ -65,10 +67,6 @@ class Server
                     j = JSON.parse(doc)
                     client.addReading(j['sensor_type'], j['value'], j['location'], j['timestamp'])
                   end
-
-
-
-
                 end
 
               end
@@ -83,14 +81,14 @@ class Server
               #puts doc
               connection.puts doc
               connection.flush
-              information
+              #information
 
             end
           end
         rescue Exception => e
           # Displays Error Message
           puts "#{ e } (#{ e.class } (#{ doc })"
-          @aerver_socket.close
+          #server_socket.close
         ensure
           connection.close
           client.is_connected = false
@@ -99,12 +97,14 @@ class Server
           if client.readings.count > 0
             client.addReading()
           end
+          client.disconnectClient
           puts ''
           puts "Temperature readings counter: #{client.temperature_counter}"
           puts ''
           puts "Acoustic readings counter: #{client.acoustic_counter}"
           puts ''
           puts "Closing client: #{ client.client_id }"
+
         end
       end
     end
@@ -117,15 +117,15 @@ class Server
   def printReadings
 
     puts ''
-    printf('See client readings y|n: ')
-    option = readline.chomp
-    if option == 'y'
+    #printf('See client readings y|n: ')
+    #option = readline.chomp
+    #if option == 'y'
 
-      printf('Type client id: ')
+      puts 'Type client id: '
       sleep(0.1)
       client = Client.new
       client.client_id =  Integer(readline.chomp)
-      printf('Type sensor: ')
+      puts 'Type sensor: '
       sensor_type = Integer(readline.chomp)
       client = client.getClient(client.client_id, )
 
@@ -149,10 +149,11 @@ class Server
           puts "   value: #{reading.value}"
 
         }
-      end
+      #end
 
     end
-
+    puts 'Continue y/n: '
+    option = readline.chomp
     puts ''
 
   end
@@ -193,14 +194,20 @@ class Server
       puts ' ==========================================='
     end
 
-
+    puts 'Continue y/n: '
+    option = readline.chomp
 
   end
 
 
 end
 
+=begin
 s = Server.new(2020)
-
 s.run
+
 s.close
+=end
+
+
+

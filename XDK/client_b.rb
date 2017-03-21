@@ -1,6 +1,7 @@
 require 'socket'
 require 'json'
-load 'xdk.rb'
+load '../XDK/xdk.rb'
+
 
 class ClientB < Xdk
 
@@ -11,7 +12,7 @@ class ClientB < Xdk
     str = format('%d,%d', @id, @location)
     #send id to server
     socket.puts(str)
-counter = -2
+    counter = -2
     sleep(0.3)
     #send temperature to server
     thread_a = Thread.new do
@@ -50,6 +51,8 @@ counter = -2
 
 
 end
+
+
 
 b = ClientB.new(2, 30, 1, 222222)
 b.run('127.0.0.1', 2020)

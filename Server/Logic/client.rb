@@ -1,5 +1,5 @@
-load '../DataAccess/data_client.rb'
-load '../DataAccess/data_reading.rb'
+load '../Server/DataAccess/data_client.rb'
+load '../Server/DataAccess/data_reading.rb'
 
 
 class Client
@@ -100,12 +100,13 @@ class Client
 
     end
 
-    if (((@temperature_counter + @acoustic_counter) == 10 || !@is_connected) && @readings.count > 0)
+    if ((@readings.count == 10 || !@is_connected) && @readings.count > 0)
       DataReading.insertReadings(@client_id, @readings)
       readings.clear
     end
 
   end
+
 
   def saveReadings
 

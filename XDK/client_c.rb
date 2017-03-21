@@ -1,5 +1,5 @@
 require 'socket'
-load 'xdk.rb'
+load '../XDK/xdk.rb'
 
 class ClientC < Xdk
 

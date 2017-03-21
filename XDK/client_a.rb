@@ -1,7 +1,7 @@
 require 'socket'
 require 'json'
 require 'thread'
-load 'xdk.rb'
+load '../XDK/xdk.rb'
 
 class ClientA < Xdk
 
