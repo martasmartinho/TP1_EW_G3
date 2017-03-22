@@ -161,8 +161,6 @@ class DataClient
 
   end
 
-
-
   #update a client
   def self.updateClient(client_id, is_connected, location)
 
