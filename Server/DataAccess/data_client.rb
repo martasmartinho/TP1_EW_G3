@@ -114,9 +114,53 @@ class DataClient
     end
 
 
-    puts "There are #{docs.count} documents"
+    #puts "There are #{docs.count} documents"
 
   end
+
+  #select connected clients
+  def self.selectConnectedClients()
+
+
+    connectedClients = Array.new
+
+    Mongo::Logger.logger.level = ::Logger::FATAL
+
+    begin
+
+      #open connection
+      client = Mongo::Client.new(['127.0.0.1:27017'], :database => @db,
+                                 :server_selection_timeout => 5)
+
+      #select document
+      client[:client_readings].find(:is_connected => true).each do |doc|
+        c = Client.new
+
+        c.client_id = Integer(doc['client_id'])
+        c.is_connected = doc['is_connected']
+        c.location = doc['location']
+
+        connectedClients.push(c)
+
+      end
+
+      #close connection
+      client.close
+
+      return connectedClients
+
+    rescue Mongo::Error::NoServerAvailable => e
+
+      p 'Cannot connect to the server'
+      p e
+
+    end
+
+
+
+
+  end
+
 
 
   #update a client

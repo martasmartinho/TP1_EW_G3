@@ -26,6 +26,7 @@ class ClientC < Xdk
       end
 
     end
+
     sleep(0.1)
     #send temperature to server
     thread_b = Thread.new do

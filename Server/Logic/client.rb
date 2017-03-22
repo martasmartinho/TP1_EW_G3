@@ -18,6 +18,7 @@ class Client
 
   end
 
+
   def connectClient
 
     if DataClient.existClient(@client_id)
@@ -28,7 +29,6 @@ class Client
 
 
   end
-
 
   #reconnect a client
   def disconnectClient
@@ -49,6 +49,12 @@ class Client
 
   end
 
+  #get a client
+  def self.selectConnectedClients
+
+      return DataClient.selectConnectedClients
+
+  end
 
   #get a client
   def existClient
@@ -58,7 +64,6 @@ class Client
     return exist
 
   end
-
 
   #get a client readings
   def getReadings(sensor_type)

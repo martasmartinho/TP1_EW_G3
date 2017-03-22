@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e30bd38a-ff88-4b8b-ad5e-6c4052ac5409" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/UI/main_class.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TP1_EW_G3.iml" afterPath="$PROJECT_DIR$/.idea/TP1_EW_G3.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/DataAccess/data_client.rb" afterPath="$PROJECT_DIR$/Server/DataAccess/data_client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/Logic/client.rb" afterPath="$PROJECT_DIR$/Server/Logic/client.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" afterPath="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/client_a.rb" afterPath="$PROJECT_DIR$/XDK/client_a.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/client_b.rb" afterPath="$PROJECT_DIR$/XDK/client_b.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/XDK/client_c.rb" afterPath="$PROJECT_DIR$/XDK/client_c.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,16 +18,16 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/TP1_EW_G3@client_main_class.coverage" NAME="client_main_class Coverage Results" MODIFIED="1489239670571" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@main_class.coverage" NAME="main_class Coverage Results" MODIFIED="1490122123165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@main_class.coverage" NAME="main_class Coverage Results" MODIFIED="1490176345842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/UI" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@server.coverage" NAME="server Coverage Results" MODIFIED="1490117801527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@readings_client.coverage" NAME="readings_client Coverage Results" MODIFIED="1489249824244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@client__1_.coverage" NAME="client (1) Coverage Results" MODIFIED="1489274713083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/Logic" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@dr_client.coverage" NAME="dr_client Coverage Results" MODIFIED="1489275633473" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@connection.coverage" NAME="connection-cliente Coverage Results" MODIFIED="1489190994396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TCP" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_c.coverage" NAME="client_c Coverage Results" MODIFIED="1490122129454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_c.coverage" NAME="client_c Coverage Results" MODIFIED="1490176354805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@reading.coverage" NAME="reading Coverage Results" MODIFIED="1489274704977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/Logic" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@client.coverage" NAME="client Coverage Results" MODIFIED="1490122065505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/Logic" MODULE_NAME="TP1_EW_G3" />
-    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_b.coverage" NAME="client_b Coverage Results" MODIFIED="1490122126181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@client.coverage" NAME="client Coverage Results" MODIFIED="1490176199128" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/Logic" MODULE_NAME="TP1_EW_G3" />
+    <SUITE FILE_PATH="coverage/TP1_EW_G3@client_b.coverage" NAME="client_b Coverage Results" MODIFIED="1490176204276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@connection__1_.coverage" NAME="connection (1) Coverage Results" MODIFIED="1489190762060" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@server_connection.coverage" NAME="server_connection Coverage Results" MODIFIED="1489191127643" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/XDK" MODULE_NAME="TP1_EW_G3" />
     <SUITE FILE_PATH="coverage/TP1_EW_G3@dr_server.coverage" NAME="dr_server Coverage Results" MODIFIED="1489516135057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Server/TCPServerConnection" MODULE_NAME="TP1_EW_G3" />
@@ -57,56 +53,36 @@
       <file leaf-file-name="main_class.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/main_class.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+            <state relative-caret-position="150">
+              <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="localhost/tp1_ew_mongodb/client_readings" pinned="false" current-in-tab="true">
-        <entry file="mongo://localhost/tp1_ew_mongodb/client_readings">
-          <provider selected="true" editor-type-id="MongoData">
-            <state />
+      <file leaf-file-name="data_client.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/DataAccess/data_client.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="64">
+              <caret line="134" column="22" lean-forward="true" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+              <folding>
+                <element signature="e#155#983#0" expanded="false" />
+                <element signature="e#1007#1617#0" expanded="false" />
+                <element signature="e#1641#2388#0" expanded="false" />
+                <element signature="e#3224#3922#0" expanded="false" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="client_b.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/XDK/client_b.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Logic/client.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client_c.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XDK/client_c.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="client_a.rb" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/XDK/client_a.rb">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-              <folding />
+              <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+              <folding>
+                <element signature="e#78#967#2" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,9 +90,47 @@
       <file leaf-file-name="server.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/TCPServerConnection/server.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="76">
+              <caret line="171" column="5" lean-forward="false" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+              <folding>
+                <element signature="e#160#231#0" expanded="false" />
+                <element signature="e#251#3103#0" expanded="false" />
+                <element signature="e#3156#4127#0" expanded="false" />
+                <element signature="e#4149#4280#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client_c.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/XDK/client_c.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding>
+                <element signature="e#305#491#0" expanded="false" />
+                <element signature="e#566#747#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.rb" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Server/Logic/client.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <element signature="e#236#453#0" expanded="false" />
+                <element signature="e#458#679#0" expanded="false" />
+                <element signature="e#705#799#0" expanded="false" />
+                <element signature="e#819#945#0" expanded="false" />
+                <element signature="e#965#1051#0" expanded="false" />
+                <element signature="e#1071#1159#0" expanded="false" />
+                <element signature="e#1188#1330#0" expanded="false" />
+                <element signature="e#1357#2112#0" expanded="false" />
+                <element signature="e#2117#2532#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,14 +193,14 @@
         <option value="$PROJECT_DIR$/Server/UI/main_class.rb" />
         <option value="$PROJECT_DIR$/Server/Logic/reading.rb" />
         <option value="$PROJECT_DIR$/XDK/client.rb" />
-        <option value="$PROJECT_DIR$/Server/DataAccess/data_client.rb" />
         <option value="$PROJECT_DIR$/Server/DataAccess/data_reading.rb" />
-        <option value="$PROJECT_DIR$/Server/Logic/client.rb" />
         <option value="$PROJECT_DIR$/UI/main_class.rb" />
-        <option value="$PROJECT_DIR$/XDK/client_c.rb" />
         <option value="$PROJECT_DIR$/XDK/client_a.rb" />
         <option value="$PROJECT_DIR$/XDK/client_b.rb" />
+        <option value="$PROJECT_DIR$/Server/DataAccess/data_client.rb" />
         <option value="$PROJECT_DIR$/Server/TCPServerConnection/server.rb" />
+        <option value="$PROJECT_DIR$/XDK/client_c.rb" />
+        <option value="$PROJECT_DIR$/Server/Logic/client.rb" />
       </list>
     </option>
   </component>
@@ -205,7 +219,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="813" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -225,8 +239,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,6 +251,16 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1_EW_G3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TP1_EW_G3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -261,7 +285,7 @@
       <recent name="$PROJECT_DIR$/UI" />
     </key>
   </component>
-  <component name="RunManager" selected="Ruby.client_a">
+  <component name="RunManager" selected="Ruby.client_c">
     <configuration default="false" name="server" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
       <module name="TP1_EW_G3" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -549,8 +573,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Ruby.client_c" />
-        <item index="1" class="java.lang.String" itemvalue="Ruby.client_b" />
-        <item index="2" class="java.lang.String" itemvalue="Ruby.main_class" />
+        <item index="1" class="java.lang.String" itemvalue="Ruby.main_class" />
+        <item index="2" class="java.lang.String" itemvalue="Ruby.client_b" />
         <item index="3" class="java.lang.String" itemvalue="Ruby.client" />
         <item index="4" class="java.lang.String" itemvalue="Ruby.server" />
       </list>
@@ -606,7 +630,8 @@
       <workItem from="1490004539363" duration="599000" />
       <workItem from="1490020225113" duration="506000" />
       <workItem from="1490020935513" duration="6091000" />
-      <workItem from="1490039815620" duration="16901000" />
+      <workItem from="1490039815620" duration="17033000" />
+      <workItem from="1490174889737" duration="1694000" />
     </task>
     <servers />
   </component>
@@ -616,23 +641,22 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226651000" />
+    <option name="totallyTimeSpent" value="228477000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1440" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19861111" sideWeight="0.6222664" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19861111" sideWeight="0.6239554" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259053" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789317" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2994429" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29929078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21736111" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19861111" sideWeight="0.3777336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19861111" sideWeight="0.37604457" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4568245" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -651,6 +675,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289855" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3259053" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -702,14 +727,19 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/Server/Logic/client.rb</url>
-          <line>110</line>
+          <line>115</line>
           <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Server/TCPServerConnection/server.rb</url>
+          <line>11</line>
+          <option name="timeStamp" value="211" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="211" />
+      <option name="time" value="212" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -726,7 +756,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#236#453#0" expanded="false" />
+            <element signature="e#458#679#0" expanded="false" />
+            <element signature="e#705#799#0" expanded="false" />
+            <element signature="e#819#945#0" expanded="false" />
+            <element signature="e#965#1051#0" expanded="false" />
+            <element signature="e#1071#1159#0" expanded="false" />
+            <element signature="e#1188#1330#0" expanded="false" />
+            <element signature="e#1357#2112#0" expanded="false" />
+            <element signature="e#2117#2532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -742,7 +782,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#155#983#0" expanded="false" />
+            <element signature="e#1007#1617#0" expanded="false" />
+            <element signature="e#1641#2388#0" expanded="false" />
+            <element signature="e#3224#3922#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -758,7 +803,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#236#453#0" expanded="false" />
+            <element signature="e#458#679#0" expanded="false" />
+            <element signature="e#705#799#0" expanded="false" />
+            <element signature="e#819#945#0" expanded="false" />
+            <element signature="e#965#1051#0" expanded="false" />
+            <element signature="e#1071#1159#0" expanded="false" />
+            <element signature="e#1188#1330#0" expanded="false" />
+            <element signature="e#1357#2112#0" expanded="false" />
+            <element signature="e#2117#2532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -850,19 +905,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/XDK/client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/XDK/client.rb" />
     <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.4.0/gems/ruby-debug-ide-0.6.1.beta4/lib/ruby-debug-ide.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -870,14 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/DataAccess/data_client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -890,38 +929,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Logic/client.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/TCPServerConnection/server.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="98" column="13" lean-forward="true" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XDK/client_b.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/XDK/client_c.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/XDK/client_a.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -930,11 +937,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/XDK/client_b.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+          <folding>
+            <element signature="e#78#967#2" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/DataAccess/data_client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="134" column="22" lean-forward="true" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+          <folding>
+            <element signature="e#155#983#0" expanded="false" />
+            <element signature="e#1007#1617#0" expanded="false" />
+            <element signature="e#1641#2388#0" expanded="false" />
+            <element signature="e#3224#3922#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UI/main_class.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="11" lean-forward="true" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+        <state relative-caret-position="150">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/TCPServerConnection/server.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="171" column="5" lean-forward="false" selection-start-line="171" selection-start-column="5" selection-end-line="171" selection-end-column="5" />
+          <folding>
+            <element signature="e#160#231#0" expanded="false" />
+            <element signature="e#251#3103#0" expanded="false" />
+            <element signature="e#3156#4127#0" expanded="false" />
+            <element signature="e#4149#4280#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/XDK/client_c.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#305#491#0" expanded="false" />
+            <element signature="e#566#747#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Logic/client.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#236#453#0" expanded="false" />
+            <element signature="e#458#679#0" expanded="false" />
+            <element signature="e#705#799#0" expanded="false" />
+            <element signature="e#819#945#0" expanded="false" />
+            <element signature="e#965#1051#0" expanded="false" />
+            <element signature="e#1071#1159#0" expanded="false" />
+            <element signature="e#1188#1330#0" expanded="false" />
+            <element signature="e#1357#2112#0" expanded="false" />
+            <element signature="e#2117#2532#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

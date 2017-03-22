@@ -169,7 +169,7 @@ class Server
   #show information to user
   def information
     clearRubyConsole
-
+    #@clients = Client.selectConnectedClients
     if @clients.count > 0
       puts ' ============ Connected clients ============'
       @clients.each { |c|
